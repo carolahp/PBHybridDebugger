@@ -1,0 +1,3 @@
+interpreter
+newInterpreter
+	^ DASTInterpreter new

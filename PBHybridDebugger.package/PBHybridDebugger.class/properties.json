@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "PBHybridDebugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stepIntoButton",
+		"stepOverButton",
+		"stepThroughButton",
+		"interpreter",
+		"code",
+		"codeText",
+		"contextList",
+		"variablesList"
+	],
+	"name" : "PBHybridDebugger",
+	"type" : "normal"
+}
