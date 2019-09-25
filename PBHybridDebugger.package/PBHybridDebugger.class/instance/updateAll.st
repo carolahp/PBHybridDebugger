@@ -1,7 +1,5 @@
 updating
 updateAll
-	contextList items: interpreter contextsStack.
-	contextList selectItem: 1.
-	contextList update.
-	self updateVariablesList.
+	self updateContextsList.
+	self updateVariablesTable.
 	self updateCodeText

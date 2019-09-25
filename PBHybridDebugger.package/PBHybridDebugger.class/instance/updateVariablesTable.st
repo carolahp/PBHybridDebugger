@@ -1,0 +1,3 @@
+updating
+updateVariablesTable
+	self updateVariablesTable: interpreter currentContext

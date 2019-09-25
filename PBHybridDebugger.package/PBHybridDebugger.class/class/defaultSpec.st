@@ -17,6 +17,9 @@ defaultSpec
 			expand: true
 			fill: true
 			padding: 1;
-			add: #variablesList;
+			add: #variablesTable
+			expand: true
+			fill: true
+			padding: 1
 			yourself);
 		yourself

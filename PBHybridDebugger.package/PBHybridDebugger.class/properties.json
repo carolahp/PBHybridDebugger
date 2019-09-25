@@ -13,7 +13,7 @@
 		"code",
 		"codeText",
 		"contextList",
-		"variablesList"
+		"variablesTable"
 	],
 	"name" : "PBHybridDebugger",
 	"type" : "normal"

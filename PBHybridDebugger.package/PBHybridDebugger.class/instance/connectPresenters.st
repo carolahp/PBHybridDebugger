@@ -7,4 +7,8 @@ connectPresenters
 	stepThroughButton action: [ interpreter stepThrough . 
 									self updateAll ].
 	contextList
-		whenSelectionChangedDo: [ :selection | [ :selecteditem | selecteditem ifNotNil: [self updateCodeText: selecteditem] ] cull: selection selectedItem ].
+		whenSelectionChangedDo: [ :selection | 
+			[ :selecteditem | selecteditem ifNotNil: [
+				self updateCodeText: selecteditem.
+				self updateVariablesTable: selecteditem
+				] ] cull: selection selectedItem ].

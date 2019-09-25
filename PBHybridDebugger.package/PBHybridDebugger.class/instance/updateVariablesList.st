@@ -1,3 +1,0 @@
-updating
-updateVariablesList
-	self updateVariablesList: interpreter currentContext
