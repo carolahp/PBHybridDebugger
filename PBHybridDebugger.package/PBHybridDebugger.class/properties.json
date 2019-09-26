@@ -14,7 +14,8 @@
 		"codeText",
 		"contextList",
 		"variablesTable",
-		"variableInspector"
+		"variableInspector",
+		"restartButton"
 	],
 	"name" : "PBHybridDebugger",
 	"type" : "normal"

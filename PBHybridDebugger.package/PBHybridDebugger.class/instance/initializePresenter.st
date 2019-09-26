@@ -3,6 +3,7 @@ initializePresenter
 	stepIntoButton := self newButton.
 	stepOverButton := self newButton.
 	stepThroughButton := self newButton.
+	restartButton := self newButton.
 	variablesTable := self newTable.
 	codeText := self newNonCompiledCode.
 	contextList := self newList.
@@ -41,4 +42,7 @@ initializePresenter
 	stepThroughButton
 		icon: (self iconNamed: #glamorousThrough);
 		label: 'Step Through'.
+	restartButton
+		icon: (self iconNamed: #glamorousRefresh);
+		label: 'Restart'.
 	

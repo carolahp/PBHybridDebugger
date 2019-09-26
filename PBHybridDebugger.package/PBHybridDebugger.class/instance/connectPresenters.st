@@ -6,6 +6,8 @@ connectPresenters
 									self updateAll ].
 	stepThroughButton action: [ interpreter stepThrough . 
 									self updateAll ].
+	restartButton action: [ interpreter restart: contextList selection selectedItem.
+									self updateAll ].
 	contextList
 		whenSelectionChangedDo: [ :selection | 
 			[ :selecteditem | selecteditem ifNotNil: [
