@@ -41,4 +41,4 @@ initializePresenter
 	stepThroughButton
 		icon: (self iconNamed: #glamorousThrough);
 		label: 'Step Through'.
-	self updateAll
+	
