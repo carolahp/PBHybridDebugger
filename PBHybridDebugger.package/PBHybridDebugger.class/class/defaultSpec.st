@@ -7,19 +7,27 @@ defaultSpec
 					add: #stepOverButton;
 					add: #stepThroughButton;
 					yourself)
-			withConstraints: [ :c | c height: self toolbarHeight ];
+		withConstraints: [ :c | c height: self toolbarHeight ];
+		
 		add: #codeText
 			expand: true
 			fill: true
 			padding: 1;
+		
 		add: (SpBoxLayout newHorizontal
-			add: #contextList
-			expand: true
-			fill: true
-			padding: 1;
-			add: #variablesTable
-			expand: true
-			fill: true
-			padding: 1
-			yourself);
-		yourself
+					add: #contextList
+					expand: true
+					fill: true
+					padding: 1;
+	
+					add: #variablesTable
+					expand: true
+					fill: true
+					padding: 1;
+					
+					add: #variableInspector
+					expand: true
+					fill: true
+					padding: 1
+					yourself);
+		yourself 

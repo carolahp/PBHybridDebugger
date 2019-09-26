@@ -12,3 +12,9 @@ connectPresenters
 				self updateCodeText: selecteditem.
 				self updateVariablesTable: selecteditem
 				] ] cull: selection selectedItem ].
+	
+	variablesTable 
+		whenSelectionChangedDo: [ :selection |
+			[ :selecteditem | selecteditem ifNotNil: [
+				self updateVariableInspector: selecteditem
+				] ] cull: selection selectedItem ] 

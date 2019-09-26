@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "PBHybridDebugger-code",
+	"instvars" : [ ],
+	"name" : "SpNonCompiledCodeSelectionCommand"
+}

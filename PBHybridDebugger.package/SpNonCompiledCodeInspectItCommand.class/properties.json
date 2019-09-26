@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "SpNonCompiledCodeSelectionCommand classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SpNonCompiledCodeInspectItCommand",
+	"commentStamp" : "",
+	"super" : "SpCodeInspectItCommand",
+	"traitcomposition" : "SpNonCompiledCodeSelectionCommand",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "PBHybridDebugger-code"
+}

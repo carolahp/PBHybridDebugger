@@ -4,24 +4,34 @@ initializePresenter
 	stepOverButton := self newButton.
 	stepThroughButton := self newButton.
 	variablesTable := self newTable.
-	codeText := self newCode.
+	codeText := self newNonCompiledCode.
 	contextList := self newList.
+	variableInspector := self newText.
 	
 	variablesTable
 		addColumn: (SpStringTableColumn title: 'Name' evaluated: #key);
 		addColumn: (SpStringTableColumn title: 'Value' evaluated: #value);
-		beResizable.
-	
-	"variablesList
-		display: [ :item | item key ];
+		beResizable;
 		contextMenu:
 			(self newMenu
 				addItem: [ :item | 
 					item
 						name: 'Inspect';
 						icon: (self iconNamed: #smallHelp);
-						action: [ variablesList selection selectedItem inspect ] ];
-				yourself)."
+						action: [ variablesTable selection selectedItem value inspect ] ];
+				yourself).
+				
+	contextList
+		display: [ :item | item ];
+		contextMenu:
+			(self newMenu
+				addItem: [ :item | 
+					item
+						name: 'Inspect';
+						icon: (self iconNamed: #smallHelp);
+						action: [ contextList selection selectedItem inspect ] ];
+				yourself).
+				
 	stepOverButton
 		icon: (self iconNamed: #glamorousOver);
 		label: 'Step Over'.

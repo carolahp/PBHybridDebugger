@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SpCodePresenter",
+	"category" : "PBHybridDebugger-code",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SpNonCompiledCodePresenter",
+	"type" : "normal"
+}
