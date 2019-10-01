@@ -7,6 +7,8 @@ defaultSpec
 					add: #stepOverButton;
 					add: #stepThroughButton;
 					add: #restartButton;
+					add: #diveInButton;
+					add: #diveOutButton;
 					yourself)
 		withConstraints: [ :c | c height: self toolbarHeight ];
 		

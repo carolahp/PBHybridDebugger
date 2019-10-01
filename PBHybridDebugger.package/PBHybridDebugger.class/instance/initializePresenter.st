@@ -4,6 +4,9 @@ initializePresenter
 	stepOverButton := self newButton.
 	stepThroughButton := self newButton.
 	restartButton := self newButton.
+	diveInButton := self newButton.
+	diveOutButton := self newButton.
+	
 	variablesTable := self newTable.
 	codeText := self newNonCompiledCode.
 	contextList := self newList.
@@ -45,4 +48,10 @@ initializePresenter
 	restartButton
 		icon: (self iconNamed: #glamorousRefresh);
 		label: 'Restart'.
+	diveInButton
+		icon: (self iconNamed: #bottom);
+		label: 'Dive In'.
+	diveOutButton
+		icon: (self iconNamed: #top);
+		label: 'Dive Out'.
 	

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "caro 9/30/2019 15:33",
 	"super" : "SpPresenter",
 	"category" : "PBHybridDebugger-core",
 	"classinstvars" : [ ],
@@ -15,7 +15,9 @@
 		"contextList",
 		"variablesTable",
 		"variableInspector",
-		"restartButton"
+		"restartButton",
+		"diveInButton",
+		"diveOutButton"
 	],
 	"name" : "PBHybridDebugger",
 	"type" : "normal"
