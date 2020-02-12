@@ -1,23 +1,29 @@
 specs
 defaultSpec
-	^SpBoxLayout newVertical
-		add:
-			(SpBoxLayout newHorizontal
+	^SpecLayout composed
+		newColumn: [ :col | 
+		col 
+			newRow: [:row | 
+				row
 					add: #stepIntoButton;
 					add: #stepOverButton;
 					add: #stepThroughButton;
 					add: #restartButton;
 					add: #diveInButton;
-					add: #diveOutButton;
-					yourself)
-		withConstraints: [ :c | c height: self toolbarHeight ];
+					add: #diveOutButton ] height: self toolbarHeight;
+			newRow: [ :row |
+				row 
+					add: #contextList;
+					add: #codeText ];
+			newRow: [ :row |
+				row 
+					add: #variablesTable;
+					add: #variableInspector]]; yourself
+					
+					
+							
 		
-		add: #codeText
-			expand: true
-			fill: true
-			padding: 1;
-		
-		add: (SpBoxLayout newHorizontal
+		"add: (SpecLayout horizontal
 					add: #contextList
 					expand: true
 					fill: true
@@ -32,5 +38,4 @@ defaultSpec
 					expand: true
 					fill: true
 					padding: 1
-					yourself);
-		yourself 
+					yourself);"  

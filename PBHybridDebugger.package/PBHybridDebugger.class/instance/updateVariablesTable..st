@@ -1,5 +1,5 @@
 updating
 updateVariablesTable: aDASTContext
 	
-	variablesTable items: aDASTContext allInternVars, aDASTContext allTemps , aDASTContext allInstVars.
+	variablesTable widget dataSource elements: aDASTContext allInternVars, aDASTContext allTemps , aDASTContext allInstVars.
 	

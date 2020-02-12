@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "caro 9/30/2019 15:33",
-	"super" : "SpPresenter",
+	"super" : "ComposablePresenter",
 	"category" : "PBHybridDebugger-core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
