@@ -17,7 +17,8 @@
 		"variableInspector",
 		"restartButton",
 		"diveInButton",
-		"diveOutButton"
+		"diveOutButton",
+		"temps"
 	],
 	"name" : "PBHybridDebugger",
 	"type" : "normal"
