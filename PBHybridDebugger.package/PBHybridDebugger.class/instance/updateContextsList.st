@@ -1,5 +1,5 @@
 updating
 updateContextsList
-	contextList items: interpreter contextsStack.
+	contextList items: (interpreter contextsStack collect: #cast).
 	contextList selectIndex: 1.
 	contextList update
