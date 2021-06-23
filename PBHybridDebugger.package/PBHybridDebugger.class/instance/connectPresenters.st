@@ -1,13 +1,13 @@
 accessing
 connectPresenters
 	stepIntoButton
-		action: [ interpreter stepInto.
+		action: [ interpreter stepIntoInContext: contextList selection selectedItem.
 			self updateAll ].
 	stepOverButton
 		action: [ interpreter stepOverInContext: contextList selection selectedItem.
 			self updateAll ].
 	stepThroughButton
-		action: [ interpreter stepThrough.
+		action: [ interpreter stepThroughInContext: contextList selection selectedItem.
 			self updateAll ].
 	restartButton
 		action: [ interpreter restart: contextList selection selectedItem.
