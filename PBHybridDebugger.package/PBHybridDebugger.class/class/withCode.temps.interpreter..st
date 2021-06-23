@@ -7,6 +7,9 @@ withCode: someCode temps: aCollection interpreter: aDASTInterpreter
 				->
 					(assoc value
 						asRemoteObjectInObjectSpace: aDASTInterpreter evaluator objectSpace) ].
+	
+	aDASTInterpreter initializeWithProgram: (RBParser parseExpression: someCode) withTemps: temps.
+	
 	^ self basicNew
 		code: someCode;
 		temps: temps;
